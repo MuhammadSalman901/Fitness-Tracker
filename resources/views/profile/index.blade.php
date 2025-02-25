@@ -1,5 +1,5 @@
 <x-layout>
-    <x-header.section-heading class="mt-[15vh]">Profile</x-header.section-heading>
+    <x-header.section-heading class="mt-[7vh]">Profile</x-header.section-heading>
 
     <div class="mt-10 flex items-center p-8 rounded-xl border border-gray-700 bg-gray-800/50 hover:border-emerald-500/30 transition-colors duration-300 group backdrop-blur-sm">
         <div class="h-64 flex gap-x-16">
@@ -47,6 +47,14 @@
                         {{ Auth::user()->workouts->count() }}<span class="text-sm font-normal text-gray-400"> days streak</span>
                     </p>
                 </div>
+            </div>
+
+            <!-- Total Duration -->
+            <div class="space-y-2">
+                <h3 class="text-lg font-semibold text-emerald-400">Total Duration:</h3>
+                <p class="text-2xl font-bold text-cyan-300">
+                    {{ Auth::user()->workouts->sum('workout_duration') }}<span class="text-sm font-normal text-gray-400"> minutes</span>
+                </p>
             </div>
 
             <!-- Bio -->

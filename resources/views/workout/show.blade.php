@@ -20,7 +20,7 @@
                     </div>
                     <div class="flex justify-between items-center p-4 bg-gray-700/30 rounded-lg">
                         <span class="text-gray-400">Duration:</span>
-                        <span class="text-emerald-400">{{ ucfirst($workout->workout_duration) }}</span>
+                        <span class="text-emerald-400">{{ ucfirst($workout->workout_duration) }} minutes</span>
                     </div>
                 </div>
             </div>

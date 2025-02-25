@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade'); // Fixed foreign key
             $table->string('workout_name');
             $table->string('workout_type');
-            $table->string('workout_duration');
+            $table->integer('workout_duration');
             $table->text('workout_description'); // Use `text` for longer descriptions
             $table->date('workout_date');
             $table->timestamps();

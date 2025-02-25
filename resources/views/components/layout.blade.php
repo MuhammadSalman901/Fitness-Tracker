@@ -34,4 +34,6 @@
     </div>
 </body>
 
+<x-footer.footer />
+
 </html>

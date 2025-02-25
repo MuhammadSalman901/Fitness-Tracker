@@ -28,7 +28,7 @@ class WorkoutController extends Controller
             'user_id' => 'required|exists:users,id',
             'workout_name' => 'required|string|max:255',
             'workout_type' => 'required|string|max:255',
-            'workout_duration' => 'required',
+            'workout_duration' => 'required|integer|min:1',
             'workout_description' => 'required|string',
             'workout_date' => 'required|date'
         ]);

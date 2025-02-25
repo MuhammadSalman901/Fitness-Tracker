@@ -52,8 +52,8 @@
                             <x-form.form-input
                                 name="workout_duration"
                                 id="workout_duration"
-                                type="text"
-                                placeholder="60 minutes"
+                                type="integer"
+                                placeholder="Only minutes are allowed"
                                 :value="old('workout_duration')"
                                 class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent" />
                             <x-form.form-error name="workout_duration" class="text-red-500 text-sm mt-1" />
