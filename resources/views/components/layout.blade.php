@@ -9,6 +9,8 @@
     <title>Gnome Fitness</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Include Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap"
         rel="stylesheet">
@@ -16,7 +18,7 @@
 </head>
 
 <body class="bg-gray-900 text-gray-100 font-hanken-grotesk min-h-full">
-     <!-- Header -->
+    <!-- Header -->
     <x-header.header class="z-50" />
 
     <div class="flex min-h-screen pt-16">

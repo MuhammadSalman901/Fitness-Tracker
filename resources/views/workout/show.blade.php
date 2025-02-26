@@ -30,14 +30,10 @@
                     class="px-4 py-2 bg-emerald-500/20 text-emerald-300 rounded-md hover:bg-emerald-500/30 transition-colors">
                     Back
                 </a>
-                <form action="{{ route('workout.destroy', $workout) }}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit"
-                        class="px-4 py-2 bg-red-500/20 text-red-300 rounded-md hover:bg-red-500/30 transition-colors">
-                        Delete
-                    </button>
-                </form>
+                <x-delete.delete
+                    :item="$workout"
+                    route="workout.destroy"
+                    button-class="px-4 py-2 bg-red-500/20 text-red-300 rounded-md hover:bg-red-500/30 transition-colors" />
             </div>
         </div>
     </div>
