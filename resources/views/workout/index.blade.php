@@ -1,5 +1,5 @@
 <x-layout>
-    <x-header.section-heading class="mt-[12vh]">
+    <x-header.section-heading class="mt-[7vh]">
         Workouts
     </x-header.section-heading>
 
