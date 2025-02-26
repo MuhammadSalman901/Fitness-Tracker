@@ -11,7 +11,7 @@ class WorkoutController extends Controller
     public function index()
     {
         // Fetch workouts for the authenticated user
-        $workouts = Auth::user()->workouts()->latest()->get();
+        $workouts = Auth::user()->workouts()->paginate(6);
 
         // Pass the workouts to the view
         return view('workout.index', compact('workouts'));

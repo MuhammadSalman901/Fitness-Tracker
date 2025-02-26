@@ -1,5 +1,5 @@
 <x-layout>
-    <x-header.section-heading class="mt-[15vh]">
+    <x-header.section-heading class="mt-[12vh]">
         Workouts
     </x-header.section-heading>
 
@@ -21,6 +21,11 @@
                 <p class="text-gray-400">No workouts found. Create your first workout!</p>
             </div>
             @endforelse
+        </div>
+
+        <!-- Pagination Links -->
+        <div class="mt-8 mb-10">
+            {{ $workouts->links() }}
         </div>
     </div>
 </x-layout>
